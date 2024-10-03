@@ -1,0 +1,16 @@
+<?php
+
+// Define the root directory of the project for easier path management.
+define('PROJECT_ROOT', __DIR__ . '/src');
+
+// Register the Composer autoloader to automatically load project dependencies.
+require __DIR__ . '/vendor/autoload.php';
+
+// Load environment variables from the .env file into the application.
+\Lithe\Support\Env::load(__DIR__);
+
+// Load the database configuration necessary for executing database operations in console commands.
+define('DB_CONNECTION', PROJECT_ROOT . '/database/config/database.php');
+
+// Start the console application and handle the command-line arguments passed to the script.
+\Lithe\Console\Line::listen($argv);

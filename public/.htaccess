@@ -1,0 +1,19 @@
+# Disable the MultiViews option in Apache.
+Options -MultiViews
+
+# URL rewriting configuration using the 'mod_rewrite' module. Redirects all requests that do not match a directory (!-d),
+# file (!-f), or symbolic link (!-l) to the index.php file.
+RewriteEngine On
+
+# Disable directory listing in Apache. This means that if someone accesses a directory that does not have a default file (e.g., index.html),
+# the server will not list the contents of the directory, thus preventing the exposure of sensitive information.
+Options -Indexes
+
+# ErrorDocument configuration to handle custom errors.
+ErrorDocument 403 /403
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
