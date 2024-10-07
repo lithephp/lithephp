@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.1] - 2024-10-07
+
+### Fixed
+- Adjusted database configuration loading in console commands to ensure proper connection to the database.
+
 ## [1.0.0] - Initial Release
 
 ### Added
