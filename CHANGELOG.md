@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.2] - 2024-10-10
+
+### Changed
+- Refactored index file: Removed direct imports for controllers and models to be loaded by autoload, retained middleware import, and streamlined application initialization.
+
 ## [1.0.1] - 2024-10-07
 
 ### Fixed
