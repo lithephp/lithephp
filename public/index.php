@@ -12,7 +12,7 @@ require __DIR__ . '/../vendor/autoload.php';
 \Lithe\Support\Env::load(__DIR__ . '/..');
 
 // Load the database configuration
-define('DB_CONNECTION', require PROJECT_ROOT . '/database/config/database.php');
+require PROJECT_ROOT . '/database/config/database.php';
 
 // Import all middleware
 import::dir(PROJECT_ROOT . '/Http/Middleware')->get();

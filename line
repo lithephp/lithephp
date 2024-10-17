@@ -10,7 +10,7 @@ require __DIR__ . '/vendor/autoload.php';
 \Lithe\Support\Env::load(__DIR__);
 
 // Load the database configuration necessary for executing database operations in console commands.
-define('DB_CONNECTION', require PROJECT_ROOT . '/database/config/database.php');
+require PROJECT_ROOT . '/database/config/database.php';
 
 // Start the console application and handle the command-line arguments passed to the script.
 \Lithe\Console\Line::listen($argv);

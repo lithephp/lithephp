@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0] - 2024-10-17
+
+### changed
+
+- **Description**: Updates the Skeleton to utilize version 1.1 of the Lithe Framework, incorporating all improvements and new features available in this version.
+- **Changes**:
+  - Improvements to routing system and overall performance.
+  - Enhancements in route management and simplification of App class.
+  - Removed direct access to DB_CONNECTION; now accessible via Manager's connection() method.
+  - Ensured database initialization regardless of DB_SHOULD_INITIATE environment variable.
+
 ## [1.0.2] - 2024-10-10
 
 ### Changed
