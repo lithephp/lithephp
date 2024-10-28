@@ -1,5 +1,4 @@
 <?php
-
 // Define the project's root directory
 define('PROJECT_ROOT', __DIR__ . '/../src');
 
