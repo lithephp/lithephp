@@ -5,7 +5,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
-        "lithephp/framework": "^1.1"
+        "lithephp/framework": "^1.2"
     },
     "scripts": {
         "post-root-package-install": [
@@ -18,7 +18,8 @@
     "autoload": {
         "psr-4": {
             "App\\Models\\": "src/models/",
-            "App\\Http\\Controllers\\": "src/http/controllers/"
+            "App\\Http\\Controllers\\": "src/http/controllers/",
+            "App\\Http\\Middleware\\": "src/http/middleware/"
         }
     },
     "extra": {
