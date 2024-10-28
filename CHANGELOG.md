@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0] - 2024-10-28
+
+### Modified
+- **Remove explicit import of middlewares to allow automatic loading by Composer**: The explicit import of middlewares has been removed to enable automatic loading by Composer.
+- **Update composer.json to include the App\Http\Middleware directory and require version 1.2 of lithephp/framework**: The `composer.json` has been updated to include the `App\Http\Middleware` directory and require version 1.2 of `lithephp/framework`.
+
 ## [1.1.0] - 2024-10-17
 
 ### changed
